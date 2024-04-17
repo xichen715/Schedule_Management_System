@@ -1,0 +1,24 @@
+{% extends 'base_layer.html' %}
+{% block main %}
+<div style="margin:20px">
+    <h2 style="text-align:center">The list of upcoming events(Start_time within 5 days)</h2>
+    {% for event in object_list %}
+    <ul>
+        <li style="font-size:15px">
+            {% if event.priority == '1' %}
+                <span style="color:red">!!! Very important</span>
+            {% elif event.priority == '2' %}
+                <span style="color:orange">!! Important</span>
+            {% else %}
+                <span style="color:blue">! Ordinary</span>
+            {% endif %} &nbsp; &nbsp; <span style="color: #008B8B">{{ event.title }}</span><br>
+            Start_time: {{ event.start_time }} <br>
+            End_time: {{ event.end_time }} <br>
+            Description: {{ event.description }} <br>
+        </li>
+    </ul>
+    {% empty %}
+        <p>No upcoming events!</p>
+    {% endfor %}
+</div>
+{% endblock %}

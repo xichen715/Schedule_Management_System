@@ -1,0 +1,126 @@
+{% extends 'base_layer.html' %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'plugins/select2/select2.min.css' %}">
+    <link rel="stylesheet" href="{% static 'js/plugins/layer/skin/layer.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap-datetimepicker.min.css' %}">
+{% endblock %}
+
+{% block main %}
+    <div class="box box-danger">
+        <form class="form-horizontal" id="addForm" method="post">
+            {% csrf_token %}
+            <p class="box-body">
+                <fieldset>
+                    <input type="hidden" name="user" value="{{ request.user.id }}">
+                    <input type="hidden" name="id" value="{{ event.id }}">
+                        <div class="form-group has-feedback">
+                            <div class="form-group has-feedback">
+                                <label class="col-sm-2 control-label">Title</label>
+                                <div class="col-sm-8">
+                                    <textarea class="form-control" name="title" rows="1">{{event.title}}</textarea>
+                                </div>
+                            </div>    
+                        </div>
+            
+                        <div class="form-group has-feedback">
+                            <label class="col-sm-2 control-label">Description</label>
+                            <div class="col-sm-8">
+                                <textarea class="form-control" name="description" rows="5">{{event.description}}</textarea>
+                            </div>
+                        </div>
+            
+                        <div class="form-group has-feedback">
+                            <label class="col-sm-2 control-label">Start_time</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control pull-right form_datetime" name="start_time" value="{{ event.start_time | date:'Y-m-d H:i:s' }}" readonly/>
+                            </div>
+                            <label class="col-sm-2 control-label">End_time</label>
+                            <div class="col-sm-3">
+                                <input type="text" class="form-control pull-right form_datetime" name="end_time"  value="{{ event.end_time | date:'Y-m-d H:i:s' }}" readonly/>
+                            </div>
+                        </div>    
+            
+                        <label class="col-sm-2 control-label">Priority</label>
+                            <div class="col-sm-3">
+                                <select class="form-control select2" style="width:100%;" name="priority">
+                                    <option value="{{ event.priority }}">{{ event.get_priority_display }}</option>
+                                    {% for priority in priority_all %}
+                                        <option value="{{ priority.key }}">{{ priority.value }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>  
+                    </fieldset>
+                    <br><br>
+            <div class="box-footer ">
+
+                <div class="row span7 text-center ">
+                   
+                        <button type="button" id="btnSave" class="btn btn-info margin-right ">Save Update</button>
+                        &nbsp; &nbsp; <a href="{% url 'event_delete' event.pk %}">Delete this event</a>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+{% endblock %}
+
+{% block javascripts %}
+    <script src="{% static 'plugins/select2/select2.full.min.js' %}"></script>
+    <script src="{% static 'bootstrap/js/bootstrap-datetimepicker.js' %}"></script>
+    <script type="text/javascript">
+
+        $("#btnSave").click(function () {
+            var data = $("#addForm").serialize();
+            var detailUrl = "{% url 'event_detail' %}";
+            $.ajax({
+                type: $("#addForm").attr('method'),
+                url: detailUrl,
+                data: data,
+                cache: false,
+                success: function (msg) {
+                    if (msg.result) {
+                        layer.alert('The modification is saved SuccessfulLy!', {icon: 1, title: 'message', btn: ['Confrim']}, function (index) {
+                            parent.location.reload();
+                        });
+                    } else {
+                        layer.alert('Failed to save the modification, Please enter the correct content!', {icon: 5, title: 'message', btn: ['Confrim']});
+                        //$('errorMessage').html(msg.message)
+                    }
+                    return;
+                }
+            });
+        });
+
+
+        $("#btnCancel").click(function () {
+            window.location.reload();
+
+        });
+
+        
+        $(".form_datetime").datetimepicker({
+            language: 'zh',
+            //minView: 'month',
+            weekStart: 1,
+            todayBtn: 1,
+            autoclose: 1,
+            todayHighlight: 1,
+            startView: 2,
+            forceParse: 0,
+            format: 'yyyy-mm-dd hh:ii:00'
+        }).on('changeDate', function (ev) {
+            $(this).datetimepicker('hide');
+        });
+
+        // select2
+        $(function () {
+            //Initialize Select2 Elements
+            $(".select2").select2();
+        });
+
+    </script>
+
+{% endblock %}

@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% block css %}
+div.pagination {
+    margin:15px;
+}
+
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+ul.pagination li {display: inline;}
+
+ul.pagination li a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+{% endblock %}
+{% block content %}
+<div style="margin:20px">
+    <button type="button"><a href = "{% url 'notebook_create' %}">+ Create a new note</a></button>
+    <br><br>
+    {% for notebook in object_list %}
+    <ul>
+        <li style="font-size:15px; "><a href="{% url 'notebook_detail' notebook.pk %}">{{ notebook.title }}</a> | {{ notebook.create_date }} | 
+            <a href="{% url 'notebook_update' notebook.pk %}">Edit this note</a> |
+            <a href="{% url 'notebook_delete' notebook.pk %}">Delete this note</a>
+        </li>
+    </ul>
+    {% endfor %}
+    <div class="pagination">
+    <ul class="pagination">
+        {% if page_obj.has_previous %}
+            <li><a href="?page=1">&laquo; first</a></li>
+            <li><a href="?page={{ page_obj.previous_page_number }}">previous</a></li>
+        {% else %}
+            <li><a href="?page=1" style="color:#DCDCDC">&laquo; first</a></li>
+            <li><a href="" style="color:#DCDCDC">previous</a></li>
+        {% endif %}
+        {% for page in page_obj.paginator.page_range %}
+            {% if page == page_obj.number %}
+            <li ><a href="" style="color:#8A2BE2; font-weight:bold">{{page}}</a></li>
+            {% else %}
+            <li><a href="?page={{page}}">{{page}}</a></li>
+            {% endif %}
+        {% endfor %}
+        {% if page_obj.has_next %}
+            <li><a href="?page={{ page_obj.next_page_number }}">next</a></li>
+            <li><a href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a></li>
+        {% else %}
+            <li><a href="" style="color:#DCDCDC">next</a></li>
+            <li><a href="" style="color:#DCDCDC">last &raquo;</a></li>
+        {% endif %}
+    </ul>
+    </div>
+</div>
+{% endblock content %}

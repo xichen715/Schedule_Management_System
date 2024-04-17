@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+<div style="margin:20px">
+    <div style="float: right">
+        <button type="button"><a href="{% url 'notebook_update' notebook.pk %}">Edit this note</a></button>&nbsp;&nbsp;
+        <button type="button"><a href="{% url 'notebook_delete' notebook.pk %}">Delete this note</a></button>
+    </div>
+    <h2>{{notebook.title}}</h2>
+    {% if notebook.cover.url is not null %}
+        <div style='margin-left: 20px; float: right' >
+            <img src="{{notebook.cover.url}}" alt="{{ notebook.title }}" width="500" height="400" style="border-radius: 8px;">
+        </div>
+        <p style="text-align: justify; margin-right: 500px;font-size:15px;">{{notebook.body|linebreaksbr}}</p>
+    {% else %}
+        <p style="text-align: justify; font-size:20px;">{{notebook.body|linebreaksbr}}</p>
+    {% endif %}
+    
+</div>
+{% endblock content %}

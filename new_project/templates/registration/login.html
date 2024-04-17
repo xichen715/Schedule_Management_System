@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style type="text/css">
+    .account {
+        width: 500px;
+        border: 1px solid #000000;
+        border-radius: 50px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 200px;
+        padding: 20px 60px;
+        box-shadow: 5px 5px 5px 5px #233;
+    }
+
+    h2 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        color: black;
+    }
+    
+    .account h2 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <div class="account" >
+        <h2>Login</h2>
+            <form method='post'>{% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit">Login</button>&nbsp;&nbsp;
+                <input type="reset" value="Reset">
+            </form><br>
+            <p class="signup">If you don't have an account, please <a href="/accounts/signup" style="font-weight: bold">Signup</a> firstly.</p>
+    </div>
+{% endblock %}

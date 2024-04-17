@@ -1,0 +1,19 @@
+{% extends 'base_layer.html' %}
+{% block main %}
+<div style="margin: 10px">
+<h1>Delete Event</h1>
+<form action="" id="deleteForm" name ="delete" method="post">{% csrf_token %}
+    <input type="hidden" name="id" value="{{ event.id }}">
+    <p>Are you sure you want to delete this event ?</p>
+    <input type="button" id="deleteconfirm" value="Confrim">
+</form>
+</div>
+<script>
+    const refreshBtn = document.getElementById('deleteconfirm');
+    refreshBtn.addEventListener('click', () => {
+        document.delete.submit();
+        parent.location.reload();
+        layer.closeAll();
+    });
+</script>
+{% endblock %}
