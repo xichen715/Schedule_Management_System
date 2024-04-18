@@ -1,30 +1,32 @@
 # INTRODUCTION TO PROJECT
 
-## GRAPHIC ABSTRACTION
+## ESSENTIAL PART
 
-## PURPOSES
+### GRAPHIC ABSTRACTION
 
-### PROCESS TYPE
+### PURPOSES
+
+#### PROCESS TYPE
 
   - This application applied **Agile** development process.
 
-### WHY WE DO THIS
+#### WHY WE CHOSE AGILE
 
-  - This calendar is a small volume software and a kind of *schedule management software* for a wide market and we need to make it in the *fastest time possible*.That is the main reason why we choose Agile method.
+  - This calendar is a small volume software and a kind of *schedule management software* for a wide market and we need to produce it as soon as possible.
   - At the same time, during the developing process, we may *change the requirements resiliently*. It's not appropriate to use water-fall process which is inflexible.
   - Nowadays, most softwares are developed using Agile process, we follow the popularity.
   - We don't have too much regulations of the software, except some fixed requirements we decide our developing policies according to the current developing process. So Agile process is a better option for us.
 
-### POSSIBLE USAGE
+#### POSSIBLE USAGE
 
   - For *students and teachers* to record the date to have an exam, the particular date to submit their homeworks and so on.  
   - For *company staffs* to mark the events on the date using it to help them make better contribution to their company.   
   - For *any people* who may use the calender to record the events in their daily life. 
   
 
-## SOFTWARE DEVELOPMENT PLAN
+### SOFTWARE DEVELOPMENT PLAN
 
-- ### Development Process
+- #### Development Process
 -  For **requirement engineering** phase:
     - Before we started this project, we used the Internet to do some research on the types of software people currently use. We found that young people use entertainment software more often, while middle-aged and elderly people use office software or 
     simple chat software more often. As for schedule management software, it is often used by people of all ages, so the *market demand is relatively stable* and many electronic manufacturers have set it as one of the most essential software for 
@@ -51,6 +53,7 @@
     - Task/Event(core entities that users create, update and delete within the schedule software);
     - Calendar;
     - User
+    - Notification
   - For **develop design models**:
     - Sequence Diagrams: We draw this diagram to illustrate the interactions and message exchanges between objects over time which can capture the sequence of events when a user creates a task, updates a task, or delete a task.
     - Component Diagrams: We draw it to clearly show the components of the system and their relationships.For example, represent components such as User Interface, Task Manager, Calendar Integration and so on.
@@ -61,6 +64,7 @@
     to provide these methods.
     - UserInterface: This interface can define methods for user-related operations, such as createUser(), authenticateUser(), getUserDetails(), and updateUserSettings(). Objects implementing this interface would handle *user management and 
     authentication tasks*.
+    - NotificationInterface: This interface can give a reminder for the user to complete their tasks on time.
 - For **software testing**:
   - Acceptance testing:it is to verify that the software functions as expected in real-world scenarios and meets the defined acceptance criteria.
     - Functional Testing:Test cases are designed to cover different functionalities, such as creating tasks, managing calendars and so on.
@@ -73,7 +77,7 @@
     requests and evolving business needs to identify new features or modifications to existing functionality that align with the software's 
     goals and objectives.
 
-- ### Members
+- #### Members
 - Harry(p2211355):
   - role: project manager, software designer and software maintainer
   - responsibility:mainly determine the type of software and corresponding functions, write the source code for each of the function to make sure the software can work well and add relevant functions to the software to maintain its normal operation   
@@ -100,20 +104,32 @@
     -  design the main structure of our software
     -  analyst the whole software with each of the function
     -  complete remaining parts in the readme file
-- ### Schedule
+- #### Schedule
 - Project Planning:such as requirements gathering, design, development, testing, deployment, and maintenance.
 - Task Breakdown and completeness:coding a module, writing documentation, conducting testing, or integrating components.
 - Risk Management(maintenance)
-- ### Algorithm
+- #### Algorithm
 -  Task Dependency Scheduling: We use this algorithm to handle tasks that have dependencies on each other. It ensures that dependent tasks are scheduled in the correct order, considering the dependencies and ensuring that prerequisites are completed before dependent tasks can begin.
 -  Priority-based Scheduling: We assign priorities to tasks based on their importance or urgency. Tasks with higher priorities are scheduled first, ensuring that critical tasks are completed promptly.
 
-- ### Current status
+- #### Current status
 - Task and Activity Management: Schedule software allows user to create, manage, and organize tasks and activities. You can set due dates, assign tasks to individuals.
 - Calendar Integration: Our schedule software often integrates with calendar systems to synchronize scheduled activities with our calendars which show clear schedule in user interface.
-- Customization and Personalization: Schedule software often allows users to customize and personalize their schedules according to their preferences. This may include choosing different views (e.g daily, weekly, monthly).
-- ### Future plan
+- Customization and Personalization: We add some covers in our software which allows users to customize and personalize their schedules according to their preferences. This may include choosing different views (e.g daily, weekly, monthly).
+- Notification function: In the future, we can add notification function in our software so that we can be reminded to submit a report or assignment before the deadline. 
+- #### Future plan
 - Integration with Other Tools: Schedule software can integrate with other productivity tools, such as project management software, time tracking tools, or document management systems. These integrations provide a seamless workflow and enhance 
   productivity by connecting related tools and data
-- Notification function: In the future, we can add notification function in our software so that we can be reminded to submit a report or assignment before the deadline. 
 
+
+## ADDITIONAL PART
+
+### DOME
+
+
+### ENVIRONMENTS OF THE SOFTWARE DEVELOPMENT AND RUNNING
+- Programming language
+  CSS,Java Script,HTML,Python
+-  Required pakcages
+
+### Declaration (Any open sources, packages which are not developed by you (yourgroup) should be declared clearly)
