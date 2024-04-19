@@ -3,6 +3,7 @@
 ## ESSENTIAL PART
 
 ### GRAPHIC ABSTRACTION
+![graphic abstraction]( "图片title")
 
 ### PURPOSES
 
@@ -39,7 +40,7 @@
       1. Identify System Components: Break down the software into logical components (subsystem)that will work together to fulfill the functional requirements. Common components for our schedule software can include a *user interface*,task management module, calendar integration module,reporting module and a data storage component.* 
       2. Choose Architectural Patterns: for our schedule, we choose the layered architecture which organizes the system into multiple layers, with each layer responsible for a specific set of tasks. In the context of our schedule software, the layers can include *a presentation layer for the user interface*, *a business logic layer for task management* and *a data layer for data storage and retrieval*.
     - For **the principal system objects** in schedule software：
-      1. ask/Event(core entities that users create, update and delete within the schedule software);
+      1. Task/Event(core entities that users create, update and delete within the schedule software);
       2. Calendar;
       3. User;
       4. Notification;
