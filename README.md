@@ -127,7 +127,7 @@
 ### DEMO
 https://youtu.be/J4jl96kqq3c?si=_5hBakeiUXCO7lXP
 
-### ENVIRONMENTS OF THE SOFTWARE DEVELOPMENT AND RUNNING
+### Environments of the software development and running
 - System version: Windows 11
 - Python version: python 3.11
 - Django version: django 5.0.4
