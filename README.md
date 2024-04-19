@@ -3,7 +3,7 @@
 ## ESSENTIAL PART
 
 ### GRAPHIC ABSTRACTION
-![graphic abstraction]( "图片title")
+![graphic abstraction](Graphic abstraction.png "Graphic abstraction")
 
 ### PURPOSES
 
