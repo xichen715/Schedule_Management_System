@@ -111,7 +111,7 @@
 https://youtu.be/J4jl96kqq3c?si=_5hBakeiUXCO7lXP
 
 ### Environments of the software development and running
-- System version: Windows 11
+- System version: Arch Linux 6.8.5
 - Python version: python 3.11
 - Django version: django 5.0.4
 - Database: SQLite 3.45.3
