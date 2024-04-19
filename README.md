@@ -6,18 +6,18 @@
 
 ### PURPOSES
 
-#### PROCESS TYPE
+- #### PROCESS TYPE
 
   - This application applied **Agile** development process.
 
-#### WHY WE CHOSE AGILE
+- #### WHY WE CHOSE AGILE
 
   - This calendar is a small volume software and a kind of *schedule management software* for a wide market and we need to produce it as soon as possible.
   - At the same time, during the developing process, we may *change the requirements resiliently*. It's not appropriate to use water-fall process which is inflexible.
   - Nowadays, most softwares are developed using Agile process, we follow the popularity.
   - We don't have too much regulations of the software, except some fixed requirements we decide our developing policies according to the current developing process. So Agile process is a better option for us.
 
-#### POSSIBLE USAGE
+- #### POSSIBLE USAGE
 
   - For *students and teachers* to record the date to have an exam, the particular date to submit their homeworks and so on.  
   - For *company staffs* to mark the events on the date using it to help them make better contribution to their company.   
