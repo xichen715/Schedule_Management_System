@@ -89,8 +89,8 @@
       3. analyst the whole software with each of the function
       4. complete remaining parts in the readme file
 - #### Schedule
-  - Project Planning:such as requirements gathering, design, development, testing, deployment, and maintenance.
-  - Task Breakdown and completeness:coding a module, writing documentation, conducting testing, or integrating components.
+  - Project Planning: such as requirements gathering, design, development, testing, deployment, and maintenance.
+  - Task Breakdown and completeness: coding a module, writing documentation, conducting testing, or integrating components.
   - Risk Management(maintenance)
 - #### Algorithm
   -  Task Dependency Scheduling: We use this algorithm to handle tasks that have dependencies on each other. It ensures that dependent tasks are scheduled in the correct order, considering the dependencies and ensuring that prerequisites are completed before dependent tasks can begin.
