@@ -64,7 +64,7 @@
 - #### Members
   - Harry(p2211355):
     - Role: project manager, software designer and software maintainer
-    - Responsibility:mainly determine the type of software and corresponding functions, write the source code for each of the function to make sure the software can work well and add relevant functions to the software to maintain its normal operation   
+    - Responsibility: mainly determine the type of software and corresponding functions, write the source code for each of the function to make sure the software can work well and add relevant functions to the software to maintain its normal operation   
     - Portion:
       1. complete part of source code
       2. complete some parts in the readme file
@@ -73,7 +73,7 @@
       5. do the maintenance work after the prototype of our software
   - Ethan(p2211414):
     - Role: project manager, software designer and software analyst
-    - Responsibility:mainly determine the type of software and corresponding functions, write the source code for each of the function to make sure the software can work well and analyze the rationality and consistency of the use of relevant functions  
+    - Responsibility: mainly determine the type of software and corresponding functions, write the source code for each of the function to make sure the software can work well and analyze the rationality and consistency of the use of relevant functions  
     - Portion:
       1. complete the remaining source code
       2. do the testing for our software
@@ -82,7 +82,7 @@
       5. improve the function of the software
   - Wendelin(p2211552):
     - Role: project manager, software tester and software analyst
-    - Responsibility:mainly determine the type of software and corresponding functions and test whether each of the function can work in diffierent cases then write a document to summary the software. 
+    - Responsibility: mainly determine the type of software and corresponding functions and test whether each of the function can work in diffierent cases then write a document to summary the software. 
     - Portion:
       1. do the testing for our software
       2. design the main structure of the software
