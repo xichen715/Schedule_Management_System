@@ -58,9 +58,9 @@
       - NotificationInterface: This interface can give a reminder for the user to complete their tasks on time.
   - ##### For **software testing**:
     - Acceptance testing:it is to verify that the software functions as expected in real-world scenarios and meets the defined acceptance criteria.
-      - Functional Testing:Test cases are designed to cover different functionalities, such as creating tasks, managing calendars and so on.
-      - Usability Testing: We focus on evaluating the user-friendliness, intuitiveness, and overall user experience of the schedule software. 
-      - Security Testing: This type of testing aim to identify vulnerabilities and weaknesses in the schedule software's security controls. It involves assessing authentication mechanisms, data privacy, access controls, and protection against common security threats.
+    - Functional Testing:Test cases are designed to cover different functionalities, such as creating tasks, managing calendars and so on.
+    - Usability Testing: We focus on evaluating the user-friendliness, intuitiveness, and overall user experience of the schedule software. 
+    - Security Testing: This type of testing aim to identify vulnerabilities and weaknesses in the schedule software's security controls. It involves assessing authentication mechanisms, data privacy, access controls, and protection against common security threats.
   - ##### For **software evolution/maintenance**:
     - There are three types of maintenance which are *fault repairs* ,*environmental adaptation* and *functionality addition and modification*.
     - For our schedule software **functionality addition and modification** is more important.We have to gather and analyze user feedback, feature requests and evolving business needs to identify new features or modifications to existing functionality that align with the software's goals and objectives.
