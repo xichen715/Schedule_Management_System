@@ -115,7 +115,7 @@ https://youtu.be/J4jl96kqq3c?si=_5hBakeiUXCO7lXP
 - Python version: python 3.11
 - Django version: django 5.0.4
 - Database: SQLite 3.45.3
-- Other dependencies: HTML5，CSS, Java Script
+- Other dependencies: HTML5, CSS, Java Script
 - Required pakcages: bootstrap 3.3.7, jquery 2.2.3, fullcalendar 3.4.0, Select2 3.5.3
 
 ### Declaration (Any open sources, packages which are not developed by you (yourgroup) should be declared clearly)
