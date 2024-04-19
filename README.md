@@ -1,4 +1,4 @@
-# INTRODUCTION TO PROJECT
+# INTRODUCTION TO PROJECT(Schedule management system)
 
 ## ESSENTIAL PART
 
