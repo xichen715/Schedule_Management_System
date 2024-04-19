@@ -5,6 +5,10 @@
 ### GRAPHIC ABSTRACTION
 ![graphic abstraction](Graphic_abstraction.png "Graphic abstraction")
 
+### Software UI interface
+![event](Event.png "Event")
+![note](Note.png "Note")
+
 ### PURPOSES
 
 - #### Process type
