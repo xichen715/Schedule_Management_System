@@ -3,7 +3,7 @@
 ## ESSENTIAL PART
 
 ### GRAPHIC ABSTRACTION
-![graphic abstraction](Graphic abstraction.png "Graphic abstraction")
+![graphic abstraction](Graphic_abstraction.png "Graphic abstraction")
 
 ### PURPOSES
 
