@@ -27,14 +27,14 @@
 ### SOFTWARE DEVELOPMENT PLAN
 
 - #### Development Process
--  For **requirement engineering** phase:
+- ##### For **requirement engineering** phase:
     - Before we started this project, we used the Internet to do some research on the types of software people currently use. We found that young people use entertainment software more often, while middle-aged and elderly people use office software or 
     simple chat software more often. As for schedule management software, it is often used by people of all ages, so the *market demand is relatively stable* and many electronic manufacturers have set it as one of the most essential software for 
     electronic products. The market demand for schedule management software is not only stable but also includes many functions. It usually includes calendars, notebooks, weather forecasts and other related functions. The software we designed this 
     time is a 
   *multi-functional schedule management software* that integrates *calendar and notebook functions*. Regarding requirement engineering, since this software is a *front-end software* and is used by the public.The requirements are 
   diverse and change frequently, so we use the agile software process model to quickly meet consumer requirements, such as adding note taking function, adding camera functions, recording functions, etc.
-- For **software design and implementation** phases:
+- ##### For **software design and implementation** phases:
   - For **define the context and modes** of use of the schedule management software:
     - Identify the Users: We determine the primary users of the system. This may include *individuals, teams or organizations* that need to manage their schedules and tasks. Consider their roles, responsibilities, and specific requirements when it comes 
     to scheduling and time management.
