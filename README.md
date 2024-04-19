@@ -128,8 +128,16 @@
 https://youtu.be/J4jl96kqq3c?si=_5hBakeiUXCO7lXP
 
 ### ENVIRONMENTS OF THE SOFTWARE DEVELOPMENT AND RUNNING
-- Programming language
-  CSS,Java Script,HTML,Python
--  Required pakcages
+- System version: Windows 11
+- Python version: python 3.11
+- Django version: django 5.0.4
+- Database: SQLite 3.45.3
+- Other dependencies: HTML5，CSS, Java Script
+- Required pakcages: bootstrap 3.3.7, jquery 2.2.3, fullcalendar 3.4.0, Select2 3.5.3
 
 ### Declaration (Any open sources, packages which are not developed by you (yourgroup) should be declared clearly)
+- https://github.com/RobbieHan/sandboxOA.git
+- https://getbootstrap.com/
+- https://fullcalendar.io/
+- https://jquery.com/
+- https://select2.org/
