@@ -27,14 +27,14 @@
 ### SOFTWARE DEVELOPMENT PLAN
 
 - #### Development Process
-  - ##### For **requirement engineering** phase:
+  - For **requirement engineering** phase:
     - Before we started this project, we used the Internet to do some research on the types of software people currently use. We found that young people use entertainment software more often, while middle-aged and elderly people use office software or 
     simple chat software more often. As for schedule management software, it is often used by people of all ages, so the *market demand is relatively stable* and many electronic manufacturers have set it as one of the most essential software for 
     electronic products. The market demand for schedule management software is not only stable but also includes many functions. It usually includes calendars, notebooks, weather forecasts and other related functions. The software we designed this 
     time is a 
   *multi-functional schedule management software* that integrates *calendar and notebook functions*. Regarding requirement engineering, since this software is a *front-end software* and is used by the public.The requirements are 
   diverse and change frequently, so we use the agile software process model to quickly meet consumer requirements, such as adding note taking function, adding camera functions, recording functions, etc.
-  - ##### For **software design and implementation** phases:
+  - For **software design and implementation** phases:
     - For **define the context and modes** of use of the schedule management software:
       - Identify the Users: We determine the primary users of the system. This may include *individuals, teams or organizations* that need to manage their schedules and tasks. Consider their roles, responsibilities, and specific requirements when it comes to scheduling and time management.
       - Understand User Goals and Needs: Identify the goals and needs of the users within the context of schedule management. For example, individual users may want to add tasks, delete tasks,track deadlines and improve productivity. Teams may focus on coordinating schedules, assigning tasks, and collaborating on projects. We gather and understand these goals to help us to shape our system's features and functionalities.
@@ -56,12 +56,12 @@
       - CalendarInterface: This interface might include methods like addEvent(), removeEvent(), getEvents(), and setEventReminder(). Objects that implement this interface would be responsible for managing *calendar-related functionalities* and would need to provide these methods.
       - UserInterface: This interface can define methods for user-related operations, such as createUser(), authenticateUser(), getUserDetails(), and updateUserSettings(). Objects implementing this interface would handle *user management and authentication tasks*.
       - NotificationInterface: This interface can give a reminder for the user to complete their tasks on time.
-  - ##### For **software testing**:
+  - For **software testing**:
     - Acceptance testing:it is to verify that the software functions as expected in real-world scenarios and meets the defined acceptance criteria.
     - Functional Testing:Test cases are designed to cover different functionalities, such as creating tasks, managing calendars and so on.
     - Usability Testing: We focus on evaluating the user-friendliness, intuitiveness, and overall user experience of the schedule software. 
     - Security Testing: This type of testing aim to identify vulnerabilities and weaknesses in the schedule software's security controls. It involves assessing authentication mechanisms, data privacy, access controls, and protection against common security threats.
-  - ##### For **software evolution/maintenance**:
+  - For **software evolution/maintenance**:
     - There are three types of maintenance which are *fault repairs* ,*environmental adaptation* and *functionality addition and modification*.
     - For our schedule software **functionality addition and modification** is more important.We have to gather and analyze user feedback, feature requests and evolving business needs to identify new features or modifications to existing functionality that align with the software's goals and objectives.
 
