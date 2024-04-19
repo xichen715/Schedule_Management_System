@@ -119,7 +119,6 @@ https://youtu.be/J4jl96kqq3c?si=_5hBakeiUXCO7lXP
 - Required pakcages: bootstrap 3.3.7, jquery 2.2.3, fullcalendar 3.4.0, Select2 3.5.3
 
 ### Declaration (Any open sources, packages which are not developed by you (yourgroup) should be declared clearly)
-- https://github.com/RobbieHan/sandboxOA.git
 - https://getbootstrap.com/
 - https://fullcalendar.io/
 - https://jquery.com/
